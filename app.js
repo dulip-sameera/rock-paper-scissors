@@ -88,7 +88,7 @@ function game() {
   } while (
     playerScore !== MATCH_WIN_SCORE &&
     computerScore !== MATCH_WIN_SCORE
-  );
+  ); // loop until one player reaches the match win score
 
   showFinalResult(playerScore, computerScore);
 }

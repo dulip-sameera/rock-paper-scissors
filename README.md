@@ -14,13 +14,13 @@ Here, Player 1 - Player and Player 2 - Computer
 
 ### How one round is played
 
-    First, The browser will ask for an input from the player. He/she has to provide his/her choice by typing it to the prompt box, and hit enter. (Remember choices are ROCK, PAPER, and SCISSORS)
-    For a player to win the round there are three conditions and one of them must be true when considering the choices of each player.
+First, The browser will ask for an input from the player. He/she has to provide his/her choice by typing it to the prompt box, and hit enter. (Remember choices are ROCK, PAPER, and SCISSORS)
+For a player to win the round there are three conditions and one of them must be true when considering the choices of each player.
 
-        If one player has chosen ROCK and the other has chosen SCISSORS, one with the ROCK wins the round.
-        If one player has chosen SCISSORS and the other has chosen PAPER, one with the SCISSORS win the round.
-        If one player has chosen PAPER and the other has chosen ROCK, one with the PAPER wins the round.
+If one player has chosen ROCK and the other has chosen SCISSORS, one with the ROCK wins the round.
+If one player has chosen SCISSORS and the other has chosen PAPER, one with the SCISSORS win the round.
+If one player has chosen PAPER and the other has chosen ROCK, one with the PAPER wins the round.
 
-    And there is one condition where none of the players win the round, which is if the both players has chosen the same symbol(ex-: Player 1 - "ROCK", Player 2 -"ROCK")
+And there is one condition where none of the players win the round, which is if the both players has chosen the same symbol(ex-: Player 1 - "ROCK", Player 2 -"ROCK")
 
 To declare a player has won the match, one must reach 5 scores before the other.

@@ -1,1 +1,1 @@
-# rock-paper-scissors
+# rock-paper-scissors (A CLASSIC GAME)

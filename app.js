@@ -3,12 +3,13 @@ const ROCK = 0;
 const PAPER = 1;
 const SCISSORS = 2;
 
+// This array will be used in the validation statements and when showing the results
+const choices = ["Rock", "Paper", "Scissors"];
+
 //round results
 const PLAYER_WIN = 1;
 const PLAYER_LOSE = 0;
 const TIED = -1;
-
-const choices = ["Rock", "Paper", "Scissors"];
 
 function getPlayerSelection() {
   do {
@@ -19,9 +20,9 @@ function getPlayerSelection() {
       .toLowerCase();
 
     // Validates the player input
-    if (selection === "rock") return ROCK;
-    if (selection === "paper") return PAPER;
-    if (selection === "scissors") return SCISSORS;
+    if (selection === choices[ROCK].toLowerCase()) return ROCK;
+    if (selection === choices[PAPER].toLowerCase()) return PAPER;
+    if (selection === choices[SCISSORS].toLowerCase()) return SCISSORS;
   } while (true); // this will loop until one of the correct choices returns
 }
 

@@ -11,6 +11,9 @@ const PLAYER_WIN = 1;
 const PLAYER_LOSE = 0;
 const TIED = -1;
 
+// match win score
+const MATCH_WIN_SCORE = 5;
+
 function getPlayerSelection() {
   do {
     // Get the player input
@@ -65,4 +68,69 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-console.log(playRound(getPlayerSelection(), getComputerSelection()));
+function game() {
+  const ROUND_RESULT = 2;
+
+  let round = 0;
+  let playerScore = 0;
+  let computerScore = 0;
+
+  do {
+    let roundResult = playRound(getPlayerSelection(), getComputerSelection());
+
+    showRoundResult(round++, roundResult);
+
+    if (roundResult[ROUND_RESULT] === PLAYER_WIN) {
+      playerScore++;
+    } else if (roundResult[ROUND_RESULT] === PLAYER_LOSE) {
+      computerScore++;
+    }
+  } while (
+    playerScore !== MATCH_WIN_SCORE &&
+    computerScore !== MATCH_WIN_SCORE
+  );
+
+  showFinalResult(playerScore, computerScore);
+}
+
+function showRoundResult(round, results) {
+  const PLAYER_SELECTION = 0;
+  const COMPUTER_SELECTION = 1;
+  const ROUND_RESULT = 2;
+
+  //print tied if the round is tied
+  if (results[ROUND_RESULT] === TIED) {
+    console.log(`Round ${round}: TIED`);
+  }
+
+  // print you win if the player wins the round
+  if (results[ROUND_RESULT] === PLAYER_WIN) {
+    console.log(
+      `Round ${round}: You Win! ${choices[results[PLAYER_SELECTION]]} beats ${
+        choices[results[COMPUTER_SELECTION]]
+      }`
+    );
+  }
+
+  //print you lose if the player lose the round
+  if (results[ROUND_RESULT] === PLAYER_LOSE) {
+    console.log(
+      `Round ${round}: You Lose! ${
+        choices[results[COMPUTER_SELECTION]]
+      } beats ${choices[results[PLAYER_SELECTION]]}`
+    );
+  }
+}
+
+function showFinalResult(playerScore, computerScore) {
+  if (playerScore === MATCH_WIN_SCORE) {
+    console.log("YOU WIN!");
+  } else if (computerScore === MATCH_WIN_SCORE) {
+    console.log("YOU LOSE!");
+  }
+
+  console.log(`Your Score: ${playerScore}`);
+  console.log(`Computer's Score: ${computerScore}`);
+}
+
+console.log(game());

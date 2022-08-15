@@ -20,4 +20,9 @@ function getPlayerSelection() {
   } while (true); // this will loop until one of the correct choices returns
 }
 
+function getComputerSelection() {
+  // return a number between 0 and 2(included)
+  return Math.floor(Math.random() * 3);
+}
+
 // console.log(getComputerSelection());

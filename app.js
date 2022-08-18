@@ -14,6 +14,18 @@ const TIED = -1;
 // match win score
 const MATCH_WIN_SCORE = 5;
 
+// UI
+const startStage = document.getElementById("start");
+const startBtn = document.getElementById("start__btn");
+const playStage = document.getElementById("play");
+
+startBtn.addEventListener("click", () => {
+  //hide the start stage
+  startStage.classList.add("hide");
+  //show the play stage
+  playStage.classList.remove("hide");
+});
+
 function getPlayerSelection() {
   do {
     // Get the player input
@@ -132,5 +144,3 @@ function showFinalResult(playerScore, computerScore) {
   console.log(`Your Score: ${playerScore}`);
   console.log(`Computer's Score: ${computerScore}`);
 }
-
-console.log(game());

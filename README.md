@@ -25,6 +25,6 @@ And there is one condition where none of the players win the round, which is if 
 
 To declare a player has won the match, one must reach 5 scores before the other.
 
-## RPS-V2 (Implementing a UI)
+## RPS-V2 (Implementing an UI)
 
-Currently the players have to type their choice. In this version, I am going to add an UI to this. UI would contain a stating page, game area, and the final result page. Game mechanics will not be changed.
+Currently the players have to type their choices. In this version, I am going to add an UI to this. UI would contain a starting page, game area, and the final result page. Game mechanics will not be changed.

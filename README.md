@@ -24,3 +24,7 @@ For a player to win the round there are three conditions and one of them must be
 And there is one condition where none of the players win the round, which is if the both players has chosen the same symbol(ex-: Player 1 - "ROCK", Player 2 -"ROCK")
 
 To declare a player has won the match, one must reach 5 scores before the other.
+
+## RPS-V2 (Implementing a UI)
+
+Currently the players have to type their choice. In this version, I am going to add an UI to this. UI would contain a stating page, game area, and the final result page. Game mechanics will not be changed.

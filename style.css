@@ -141,6 +141,7 @@
 {
     transition: all .2s ease-in;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .choice:hover .img, .choice:hover .caption
@@ -212,7 +213,7 @@
     font-weight: 700;
 }
 
-.next__round 
+.next__round__btn 
 {
     width: 220px;
     height: 60px;
@@ -222,12 +223,47 @@
     transition: all .3s ease-in;
 }
 
-.next__round:hover 
+.next__round__btn:hover 
 {
     letter-spacing: 0.2em;
     box-shadow: 3px 3px 5px #9b7a59;
     transform: scale(1.1);
 }
+
+
+/* End stage */
+
+.end {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.final__result 
+{
+    font-size: 60px;
+}
+
+.play__again__btn 
+{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #B8926B;
+    transition: all .3s ease-in;
+}
+
+.play__again__btn:hover 
+{
+    letter-spacing: 0.3em;
+    box-shadow: 3px 3px 5px #9b7a59;
+    transform: scale(1.1);
+}
+
 
 
 /* General */

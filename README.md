@@ -29,8 +29,8 @@ To declare a player has won the match, one must reach 5 scores before the other.
 
 Currently the players have to type their choices. In this version, I am going to add an UI to this. UI would contain a starting page, game area, and the final result page. Game mechanics will not be changed.
 
-# What I have learned
 
+What I have learned
 ---
 
 - How to think step by step

@@ -28,3 +28,11 @@ To declare a player has won the match, one must reach 5 scores before the other.
 ## RPS-V2 (Implementing an UI)
 
 Currently the players have to type their choices. In this version, I am going to add an UI to this. UI would contain a starting page, game area, and the final result page. Game mechanics will not be changed.
+
+# What I have learned
+
+---
+
+- How to think step by step
+- How to get what node user clicked using event listeners and click event
+- How to add attributes to nodes in the DOM

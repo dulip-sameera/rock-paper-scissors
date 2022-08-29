@@ -14,67 +14,79 @@
       </div>
 
       <div id="play" class="play hide">
-        <h1 class="round__title">Round 1</h1>
-        <h3 class="round__instructions">First to reach 5 wins the match</h3>
+        <h1 id="round__title" class="round__title"></h1>
+        <h3 id="instruction" class="round__instructions"></h3>
         <div class="play__area">
           <div class="play__box">
             <h2 class="box__title">Player</h2>
             <div class="choices">
-              <div class="rock choice">
-                <img class="rock img" src="./images/rock.png" alt="Rock" />
-                <p class="rock caption">Rock</p>
+              <div class="p__rock choice">
+                <img class="p__rock img" src="./images/rock.png" alt="Rock" />
+                <p class="p__rock caption">Rock</p>
               </div>
-              <div class="paper choice">
-                <img class="paper img" src="./images/paper.png" alt="Paper" />
-                <p class="paper caption">Paper</p>
-              </div>
-              <div class="scissors choice">
+              <div class="p__paper choice">
                 <img
-                  class="scissors img"
+                  class="p__paper img"
+                  src="./images/paper.png"
+                  alt="Paper"
+                />
+                <p class="p__paper caption">Paper</p>
+              </div>
+              <div class="p__scissors choice">
+                <img
+                  class="p__scissors img"
                   src="./images/scissors.png"
                   alt="Scissors"
                 />
-                <p class="scissors caption">Scissors</p>
+                <p class="p__scissors caption">Scissors</p>
               </div>
             </div>
-            <p class="current__score">Score - 2</p>
+            <p id="player__score" class="current__score"></p>
           </div>
           <div class="play__box">
             <h2 class="box__title">Computer</h2>
             <div class="choices">
-              <div class="rock choice">
-                <img class="rock img" src="./images/rock.png" alt="Rock" />
-                <p class="rock caption">Rock</p>
+              <div class="c__rock choice">
+                <img class="c__rock img" src="./images/rock.png" alt="Rock" />
+                <p class="c__rock caption">Rock</p>
               </div>
-              <div class="paper choice">
-                <img class="paper img" src="./images/paper.png" alt="Paper" />
-                <p class="paper caption">Paper</p>
-              </div>
-              <div class="scissors choice">
+              <div class="c__paper choice">
                 <img
-                  class="scissors img"
+                  class="c__paper img"
+                  src="./images/paper.png"
+                  alt="Paper"
+                />
+                <p class="c__paper caption">Paper</p>
+              </div>
+              <div class="c__scissors choice">
+                <img
+                  class="c__scissors img"
                   src="./images/scissors.png"
                   alt="Scissors"
                 />
-                <p class="scissors caption">Scissors</p>
+                <p class="c__scissors caption">Scissors</p>
               </div>
             </div>
-            <p class="current__score">Score - 2</p>
+            <p id="computer__score" class="current__score"></p>
           </div>
         </div>
       </div>
 
-      <div class="round__result__alert hide">
+      <div id="round__result" class="round__result__alert hide">
         <div class="alert__box">
-          <h1 class="alert__round__title">ROUND 1</h1>
-          <p class="alert__round__result">You Win! Rock beats Scissors</p>
-          <button class="btn next__round__btn">Next Round</button>
+          <h1 id="round__result__title" class="alert__round__title"></h1>
+          <p id="round__result__statement" class="alert__round__result"></p>
+          <button id="next__round" class="btn next__round__btn">
+            Next Round
+          </button>
         </div>
       </div>
 
-      <div class="end hide">
-        <h1 class="final__result">You Win! (5:3)</h1>
-        <button class="btn play__again__btn">Play Again</button>
+      <div id="end" class="end hide">
+        <h1 id="match__result" class="final__result"></h1>
+        <button id="play__again__btn" class="btn play__again__btn">
+          Play Again
+        </button>
       </div>
     </div>
 
